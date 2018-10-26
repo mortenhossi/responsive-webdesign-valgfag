@@ -1,1 +1,21 @@
+header {
+  background-image: url(../images/HERO.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  z-index: 0;
+}
 
+.hero-h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info-box {
+  position: relative;
+  bottom: 2rem;
+  background: white;
+}
