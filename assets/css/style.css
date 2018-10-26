@@ -1,3 +1,7 @@
+.body {
+  font-family: 'PT Sans', sans-serif;
+}
+
 header {
   background-image: url(../images/HERO.png);
   background-position: center;
