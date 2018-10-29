@@ -13,7 +13,7 @@
 
     <title>Banh Mi Sai Gon</title>
   </head>
-  <body>
+  <body onload="orderFood()">
     <header>
       <div class="container">
         <div class="d-flex flex-column">
@@ -56,6 +56,87 @@
         </div>
       </div> <!-- slut row -->
     </section>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-sm-2 p-0 d-none d-sm-block">
+          <ul class="kategorier">
+            <li class="font-weight-bold">Kategorier</li>
+            <li>Banh Mi</li>
+            <li>Ris</li>
+            <li>Risnudler</li>
+            <li>Suppe</li>
+            <li>Drikkevarer</li>
+            <li>Tilbehør</li>
+          </ul>
+        </div>
+
+        <div class="dropdown d-xs-block d-sm-none p-3">
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorier</a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Banh Mi</a>
+            <a class="dropdown-item" href="#">Ris</a>
+            <a class="dropdown-item" href="#">Risnudler</a>
+            <a class="dropdown-item" href="#">Suppe</a>
+            <a class="dropdown-item" href="#">Drikkevarer</a>
+          </div>
+        </div>
+
+        <div class="col-sm-8">
+          <h2 class="pb-3">Banh Mi</h2>
+
+          <div class="shadow p-3">
+            <h4>Marineret Svinekød</h4>
+            <p>49,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+                <p>antal:</p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 shadow">
+          <h5>Bestilling</h5>
+        </div>
+      </div> <!-- slut row -->
+    </main>
+
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col pl-0">
+            <h5 class="pt-3">Kontaktinformation</h5>
+            <p>Vesterbro 21 <br> 5000 Odense</p>
+            <p>Telefon: 30829793</p>
+            <p>Email: tinamail_2@hotmail.com</p>
+          </div>
+
+          <div class="col">
+            <h5 class="pt-3">Links</h5>
+            <a href="#" class="d-block">Facebook</a>
+            <a href="#" class="d-block">Instagram</a>
+            <a href="#" class="d-block">Smiley</a>
+          </div>
+
+          <div class="col">
+            <h5 class="pt-3">Åbningstider</h5>
+            <p>Mandag: 11:00 - 20:00 <br>
+              Tirsdag: 11:00 - 20:00 <br>
+              Onsdag: 11:00 - 20:00 <br>
+              Torsdag: 11:00 - 20:00 <br>
+              Fredag: 11:00 - 20:00 <br>
+              Lørdag: 11:00 - 20:00 <br>
+            </p>
+          </div>
+        </div> <!-- slut row -->
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
