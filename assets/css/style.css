@@ -1,5 +1,6 @@
 body {
   font-family: 'PT Sans', sans-serif;
+  position: relative;
 }
 
 header {
@@ -38,7 +39,25 @@ header {
   font-size: 2rem;
 }
 
+.order-icon:hover {
+  cursor: pointer;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 footer {
   background: #BCBCBC;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .madbtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }

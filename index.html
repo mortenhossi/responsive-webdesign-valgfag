@@ -13,7 +13,7 @@
 
     <title>Banh Mi Sai Gon</title>
   </head>
-  <body onload="orderFood()">
+  <body onload="orderFood()" data-spy="scroll" data-target=".kategorier">
     <header>
       <div class="container">
         <div class="d-flex flex-column">
@@ -51,7 +51,7 @@
           <p class="text-center text-sm-left">Banh Mi Sai Gon er et lille autentisk vietnamesisk madhus med siddepladser, og takeway. Banh Mi Sai Gons koncept er det vietnamesiske gadekøkken med fokus på, at maden skal være sund, frisk, hurtig og autentisk.</p>
         </div>
 
-        <div class="col-sm-2 d-none d-md-block p-2 pt-3 ">
+        <div class="col-sm-2 d-none d-s-block p-2 pt-3 ">
           <p><span class="font-weight-bold">Åbningstider:</span> <br> Man - Lør: 11 - 20 <br> Søn: Lukket  </p>
         </div>
       </div> <!-- slut row -->
@@ -59,50 +59,320 @@
 
     <main class="container">
       <div class="row">
-        <div class="col-sm-2 p-0 d-none d-sm-block">
-          <ul class="kategorier">
-            <li class="font-weight-bold">Kategorier</li>
-            <li>Banh Mi</li>
-            <li>Ris</li>
-            <li>Risnudler</li>
-            <li>Suppe</li>
-            <li>Drikkevarer</li>
-            <li>Tilbehør</li>
-          </ul>
+        <div class="col-md-2 p-0 d-none d-md-block">
+            <div class="sticky kategorier list-group-flush w-75">
+              <p class="font-weight-bold list-group-item">Kategorier</p>
+              <a href="#BanhMi" class="list-group-item">Banh Mi</a>
+              <a href="#ruller" class="list-group-item">Ruller</a>
+              <a href="#ris" class="list-group-item">Ris</a>
+              <a href="#risnudler" class="list-group-item">Risnudler</a>
+              <a href="#suppe" class="list-group-item">Suppe</a>
+              <a href="#drikkevarer" class="list-group-item">Drikkevarer</a>
+              <a href="#tilbehør" class="list-group-item">Tilbehør</a>
+            </div>
         </div>
 
-        <div class="dropdown d-xs-block d-sm-none p-3">
-          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorier</a>
+        <div class="dropdown d-xs-block d-md-none m-3 w-100 sticky" style="z-index: 1;">
+          <a class="btn btn-primary dropdown-toggle w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorier</a>
 
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Banh Mi</a>
-            <a class="dropdown-item" href="#">Ris</a>
-            <a class="dropdown-item" href="#">Risnudler</a>
-            <a class="dropdown-item" href="#">Suppe</a>
-            <a class="dropdown-item" href="#">Drikkevarer</a>
+          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#banhMi">Banh Mi</a>
+            <a class="dropdown-item" href="#ruller">Ruller</a>
+            <a class="dropdown-item" href="#ris">Ris</a>
+            <a class="dropdown-item" href="#risnudler">Risnudler</a>
+            <a class="dropdown-item" href="#suppe">Suppe</a>
+            <a class="dropdown-item" href="#drikkevarer">Drikkevarer</a>
+            <a class="dropdown-item" href="#tilbehør">Tilbehør</a>
           </div>
         </div>
 
-        <div class="col-sm-8">
-          <h2 class="pb-3">Banh Mi</h2>
+        <div class="col-md-8">
+          <h2 class="pb-3" id="BanhMi">Banh Mi - Vietnamesisk Baguette</h2>
 
-          <div class="shadow p-3">
-            <h4>Marineret Svinekød</h4>
-            <p>49,-</p>
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Marineret Svinekød (Xa Xiu)</h4>
+            <p class="text-primary"> <span>50</span>,-</p>
 
             <hr>
 
             <div class="d-flex">
-                <p>antal:</p>
+              <p>antal: <span class="antal">0</span></p>
               <div class="ml-auto">
                 <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
               </div>
             </div>
           </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Kyllingefrikadeller</h4>
+            <p class="text-primary"> <span>50</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Stegt Tofu Med Citrongræs</h4>
+            <p class="text-primary"> <span>50</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-3 pt-5" id="ruller">Ruller</h2>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Sommerruller</h4>
+            <p class="text-primary"> <span>20</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Forårsruller</h4>
+            <p class="text-primary"> <span>20</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-3 pt-5" id="ris">Ris</h2>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Kylling I karry og kokomælk</h4>
+            <p class="text-primary"> <span>60</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Marineret Svinekød</h4>
+            <p class="text-primary"> <span>60</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-3 pt-5" id="risnudler">Risnudler</h2>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Bun Cha Gio (Med Forårsruller)</h4>
+            <p class="text-primary"> <span>60</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Bun Bo Xao (Med Stegt Oksekød)</h4>
+            <p class="text-primary"> <span>60</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Bun Thit Nuong (Med Grillet Svinekød)</h4>
+            <p class="text-primary"> <span>60</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-3 pt-5" id="suppe">Suppe</h2>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Pho Bo (Oksekød Suppe)</h4>
+            <p class="text-primary"> <span>80</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Wonton Suppe</h4>
+            <p class="text-primary"> <span>80</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-3 pt-5" id="drikkevarer">Drikkevarer</h2>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Da Chanh (Lemonade)</h4>
+            <p class="text-primary"> <span>35</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Tra Da (Iste)</h4>
+            <p class="text-primary"> <span>35</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Cafe Sua Da (Iskaffe)</h4>
+            <p class="text-primary"> <span>35</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Sodavand</h4>
+            <p class="text-primary"> <span>30</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Vand</h4>
+            <p class="text-primary"> <span>20</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pb-3 pt-5" id="tilbehør">Tilbehør</h2>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Ekstra Kød</h4>
+            <p class="text-primary"> <span>20</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow p-3 mt-5 order-box">
+            <h4>Ekstra Ris Eller Nudler</h4>
+            <p class="text-primary"> <span>10</span>,-</p>
+
+            <hr>
+
+            <div class="d-flex">
+              <p>antal: <span class="antal">0</span></p>
+              <div class="ml-auto">
+                <span class="order-icon minusbtn">-</span> <span class="order-icon plusbtn">+</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-sm-2 shadow">
-          <h5>Bestilling</h5>
+        <div class="col-md-2 w-100">
+          <div class="sticky">
+            <button type="button" name="button" class="madbtn btn btn-primary text-left w-100">Vælg mad<span class="pris"></span></button>
+          </div>
         </div>
       </div> <!-- slut row -->
     </main>
@@ -110,21 +380,21 @@
     <footer class="mt-5">
       <div class="container">
         <div class="row">
-          <div class="col pl-0">
+          <div class="col-sm">
             <h5 class="pt-3">Kontaktinformation</h5>
             <p>Vesterbro 21 <br> 5000 Odense</p>
             <p>Telefon: 30829793</p>
             <p>Email: tinamail_2@hotmail.com</p>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <h5 class="pt-3">Links</h5>
             <a href="#" class="d-block">Facebook</a>
             <a href="#" class="d-block">Instagram</a>
             <a href="#" class="d-block">Smiley</a>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <h5 class="pt-3">Åbningstider</h5>
             <p>Mandag: 11:00 - 20:00 <br>
               Tirsdag: 11:00 - 20:00 <br>
@@ -138,7 +408,6 @@
       </div>
     </footer>
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
