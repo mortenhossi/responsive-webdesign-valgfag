@@ -37,6 +37,9 @@ header {
 
 .order-icon {
   font-size: 2rem;
+  user-select: none;
+  color: #FF4D00;
+  padding-left: 15px;
 }
 
 .order-icon:hover {
@@ -74,4 +77,21 @@ footer {
     left: 0;
     right: 0;
   }
+}
+
+.cta-background {
+  background: #FF4D00;
+}
+
+.cta-background:hover {
+  background: white;
+  border: 1px solid #FF4D00;
+}
+
+.cta {
+  color: #FF4D00;
+}
+
+.cta:hover {
+  color: #FF4D00 !important;
 }
