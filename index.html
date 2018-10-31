@@ -17,7 +17,7 @@
     <header>
       <div class="container">
         <div class="d-flex flex-column">
-          <div class="row d-flex text-white font-weight-bold pt-4">
+          <div class="row d-flex text-white font-weight-bold pt-5">
             <div class="col-sm ">
               Banh Mi Sai Gon
             </div>
@@ -62,26 +62,32 @@
         <div class="col-md-2 p-0 d-none d-md-block">
             <div class="sticky kategorier list-group-flush w-75">
               <p class="font-weight-bold list-group-item">Kategorier</p>
-              <a href="#BanhMi" class="list-group-item">Banh Mi</a>
-              <a href="#ruller" class="list-group-item">Ruller</a>
-              <a href="#ris" class="list-group-item">Ris</a>
-              <a href="#risnudler" class="list-group-item">Risnudler</a>
-              <a href="#suppe" class="list-group-item">Suppe</a>
-              <a href="#drikkevarer" class="list-group-item">Drikkevarer</a>
-              <a href="#tilbehør" class="list-group-item">Tilbehør</a>
+              <a href="#BanhMi" class="list-group-item btn btn-light text-left">Banh Mi</a>
+              <a href="#ruller" class="list-group-item btn btn-light text-left">Ruller</a>
+              <a href="#ris" class="list-group-item btn btn-light text-left">Ris</a>
+              <a href="#risnudler" class="list-group-item btn btn-light text-left">Risnudler</a>
+              <a href="#suppe" class="list-group-item btn btn-light text-left">Suppe</a>
+              <a href="#drikkevarer" class="list-group-item btn btn-light text-left">Drikkevarer</a>
+              <a href="#tilbehør" class="list-group-item btn btn-light text-left">Tilbehør</a>
             </div>
         </div>
 
-        <div class="dropdown d-xs-block d-md-none m-3 w-100 sticky" style="z-index: 1;">
-          <a class="btn btn-primary dropdown-toggle w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorier</a>
+        <div class="dropdown d-xs-block d-md-none m-3 w-100 sticky submenu" style="z-index: 1;">
+          <a class="kategoribtn btn btn-primary dropdown-toggle w-100" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorier</a>
 
           <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="#banhMi">Banh Mi</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#ruller">Ruller</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#ris">Ris</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#risnudler">Risnudler</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#suppe">Suppe</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#drikkevarer">Drikkevarer</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#tilbehør">Tilbehør</a>
           </div>
         </div>
@@ -370,7 +376,7 @@
         </div>
 
         <div class="col-md-2 w-100">
-          <div class="sticky">
+          <div class="sticky" style="z-index: 1;">
             <button type="button" name="button" class="madbtn btn btn-primary text-left w-100">Vælg mad<span class="pris"></span></button>
           </div>
         </div>

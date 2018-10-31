@@ -34,10 +34,6 @@ function orderFood() {
         orderPris -= orderCost;
         $(".pris").html(" DKK " + orderPris);
       }
-
-      if (count == 0) {
-        $(".pris").html("");
-      }
     });
   });
 }
