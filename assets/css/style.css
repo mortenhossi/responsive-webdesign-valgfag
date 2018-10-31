@@ -95,3 +95,16 @@ footer {
 .cta:hover {
   color: #FF4D00 !important;
 }
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  background: #FF4D00;
+  color: white;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  border: none;
+}
+
+.list-group-item {
+  border: none;
+}

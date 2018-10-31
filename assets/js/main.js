@@ -5,7 +5,6 @@ function orderFood() {
     $(this).on("click", function() {
       let startCount = parseInt($(this).parent().prev().children().html());
       startCount++;
-      console.log(startCount);
       $(this).parent().prev().children().html(startCount);
       // få fat i prisen på den bestilling man har trykket på
       let orderCostString = $(this).closest(".order-box").children().eq(1).children().text();
@@ -34,6 +33,31 @@ function orderFood() {
         orderPris -= orderCost;
         $(".pris").html(" DKK " + orderPris);
       }
+       if (count == 0) {
+         $(".pris").html("");
+       }
     });
   });
+
+  $(".madbtn").on("click", function() {
+    if (orderPris > 0) {
+      $(".bestillingsheadline").html("Du har bestilt for DKK " + orderPris + ".-");
+      $(".labels").css("display", "block");
+      $(".modalbestil").css("display", "block");
+    } else {
+      $(".bestillingsheadline").html("Du har intet bestilt endnu.");
+      $(".labels").css("display", "none");
+      $(".modalbestil").css("display", "none");
+    }
+  });
 }
+
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	}, 500 );
+});
